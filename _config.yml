@@ -22,7 +22,7 @@ plugins:
 
 # Site settings
 # url: 'https://www.nicolaharmanyoga.co.uk'
-url: 'https://yoganh.netlify.app'
+url: 'https://www.nicolaharmanyoga.co.uk'
 baseurl: ''
 permalink: pretty
 logo: '/assets/images/logo-sitting-96x97.png'
