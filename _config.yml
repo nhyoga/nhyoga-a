@@ -21,7 +21,8 @@ plugins:
 - jemoji
 
 # Site settings
-url: 'https://www.nicolaharmanyoga.co.uk'
+# url: 'https://www.nicolaharmanyoga.co.uk'
+url: 'https://yoganh.netlify.app'
 baseurl: ''
 permalink: pretty
 logo: '/assets/images/logo-sitting-96x97.png'
