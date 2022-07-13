@@ -1,0 +1,21 @@
+<!-- START meta include -->
+{% assign seoTitle =  page.seotitle | default: page.title | default: page.subtitle %}
+{% assign seoDesc =  page.description | default: page.description | default: page.subtitle %}
+
+<title>{{seoTitle}}</title>
+<meta name="description" content="{{seoDesc}}">
+
+<meta content="en_GB" property="og:locale">
+<meta content="Nicola Harman Yoga" property="og:site_name">
+<meta content="website" property="og:type">
+<meta property="og:url" content="{{site.url}}" >
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Teaching yoga to beginners and more experienced students for 15 years." >
+<meta property="og:description" content="{{seoDesc}}" >
+<meta property="og:image"  content="https://raw.githubusercontent.com/nhyoga/gh-pages/gh-pages/assets/images/home-cropped01-2000x1275.jpg" />
+<meta property="og:image:alt" content="Teaching yoga to beginners and more experienced students for 15 years." >
+
+
+<script type="application/ld+json">
+{"headline":"Nicola Harmon Yoga","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"{{site.url}}/assets/images/logo-sitting-96x97.png"}},"url":"{{site.url}}{{page.url}}","@type":"WebSite","@context":"https://schema.org"}</script>
+<!-- END meta include -->

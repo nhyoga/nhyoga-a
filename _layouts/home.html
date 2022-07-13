@@ -1,0 +1,45 @@
+---
+layout: default
+---
+<header class="header">
+  <div class="container">
+    {% if site.logo %}{% include site-logo.html %}{% endif %}
+
+    {% include nav-header.html %}
+  </div>
+</header>
+
+
+  <section class="header6  mbr-fullscreen" id="header6-1"
+  style="background-image: url('assets/images/home-cropped01-2000x1275.jpg');"
+  >
+
+    
+
+    <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(35, 35, 35);">
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="mbr-white col-md-10">
+                <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">
+                   {{page.title}}</h1>
+                <h3 class="mbr-text align-center pb-3 mbr-fonts-style display-2 text-white">{{page.subtitle}}<br></h3>
+                <p class="mbr-text align-center mbr-bold text-white">Yoga groups in the centre of Shoreham</p>
+                <div class="mbr-section-btn align-center "><a class="btn btn-md btn-primary display- text-white" href="classes">LEARN MORE</a></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
+        <a href="#next">
+            <i class="mbri-down mbr-iconfont"></i>
+        </a>
+    </div>
+</section>
+
+  
+
+</main>
+{% include data-classes-summary.html %}
+{% include site-footer.html %}

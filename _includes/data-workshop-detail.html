@@ -1,0 +1,72 @@
+<section class="mbr-section bg-white" id="content9-1y">
+
+  <div class="container pt-5">
+    <div class="inner-container" style="width: 100%;">
+      <hr class="line" style="width: 25%;">
+     
+      <div class="row">
+
+        <div class="col-12 col-md-6 offset-md-3 text-center px-0 typeset">
+          {% for block in site.data.workshops.heading %}
+          {% if block %}
+          <h3 class="typeset">{{block}}</h3>
+          {% endif %}
+
+          {% endfor %}
+          {% for block in site.data.workshops.desc %}
+          {% if block %}
+          <p>{{block}}</p>
+          {% endif %}
+
+          {% endfor %}
+        </div>
+      </div>
+
+      {% if site.data.workshops.display %}
+      <div class="row">
+        <div class="col-12 col-md-6 offset-md-3 text-center px-0 typeset">
+
+            <ul class="list-unstyled workshops text-center mx-auto">
+              {% for block in site.data.workshops.workshop %}
+              <li class="text-left border-botom pt-4 px-0 mx-0">
+
+                {% if block.title %}
+                  <h3 class="mb-2 text-center">{{block.title}}</h3>
+                {% endif %}
+
+                {% if block.day %}
+                  <h4 class="border-top mb-2">{{block.day | date: "%A" }}</h4>
+                  {% endif %}
+            
+                {% if block.start or block.finish %}
+                <div class="d-flex mb-1">
+                  <div class="d-inline w-25">Time</div>
+                  <div class="d-inline w-75 ">{{block.start}}-{{block.finish}}</div>
+                </div>
+                {% endif %}
+
+                {% if block.locations %}
+                <div class="d-flex mb-1">
+                  <div class="d-inline w-25">Location</div>
+                  <div class="d-inline w-75">{{block.locations}}</div>
+                </div>
+                {% endif %}
+
+                {% if block.info %}
+                <div class="d-flex mb-1">
+                  <div class="d-inline w-25">Info</div>
+                  <div class="d-inline w-75">{{block.info}}</div>
+                </div>
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+        </div>
+    
+        {% endif %}
+      </div>
+
+
+  </div><!-- end inner container -->
+  </div><!-- end container -->
+</section><!-- end section -->

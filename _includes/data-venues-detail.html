@@ -1,0 +1,98 @@
+<section class="mbr-section article content9 cid-s4UEq6b6wt" id="content9-1y">
+
+  <div class="container py-5">
+    <div class="inner-container" style="width: 100%;">
+      <hr class="line" style="width: 25%;">
+      <div class="row venues">
+        <div class="col-12 text-center py-5 typeset">
+          {% for block in site.data.venues.heading %}
+          {% if block %}
+          <h3 class="typeset">{{block}}</h3>
+          {% endif %}
+
+          {% endfor %}
+          {% for block in site.data.venues.desc %}
+          {% if block %}
+          <p>{{block}}</p>
+          {% endif %}
+
+          {% endfor %}
+
+          <div class="row">
+            <div class="col-12  text-center px-0">
+
+              {% for block in site.data.venues.locations %}
+              <div class="row border-top pt-4 px-0 mx-0">
+
+                <div class="col-12 mb-4">
+                  <h3 class="">Venue: {{block.venue}}</h3>
+                </div>
+
+                <div class="col-12 col-md-8 offset-md-2 text-center">
+
+                  {% if block.venue != "Zoom" %}
+                  <h5>Address:</h5>
+                  <p>{{block.address}} {{block.postcode}}</p>
+                  {% endif %}
+
+                  {% assign mapurl = block.embedUrl %}
+
+                  {% if mapurl %}
+                  <div class="col-12 text-center google-map">
+                    <iframe frameborder="0" width="100%" height="375px" style="border:0" src="{{block.embedUrl}}"
+                      allowfullscreen=""></iframe>
+                  </div>
+                  {% endif %}
+
+                  <h5 class="mb-0">Classes</h5>
+            
+
+
+                  <div class="row">
+                    <div class="col-12 col-md-8 offset-md-2 text-center px-md-0">
+                    
+                      <ul class="list-unstyled times">
+                        {% for class in site.data.classtimes.classtime %}
+
+                        {% if block.venue == class.locations %}
+                          <li class="text-left border-botom pt-4 px-0 mx-0">
+                            
+                              
+                            
+                              <div class="d-flex mb-1">
+                                  <div class="d-inline w-25">{{class.day}}</div>
+                                  <div class="d-inline w-75 ">{{class.start}}-{{class.finish}}</div>
+                              </div>
+                             
+                              <div class="d-flex mb-1">
+                                <div class="d-inline w-25">Info</div>
+                                <div class="d-inline w-75">{{class.info}}</div>
+                              </div>
+                          </li>
+                          {% endif %}
+                        {% endfor %}
+                      </ul>
+                    </div>
+                  </div>
+              </div>
+              </div>
+              {% endfor %}
+
+            </div>
+
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-12  text-center px-0 mb-4">
+<a class="btn btn-sm btn-primary display-4" href="mailto:yoga@nicolaharman.com">Contact - Email</a>
+<a class="btn btn-sm btn-primary display-4" href="tel:07834070448">BOOK - 07834070448</a>
+</div>
+  </div>
+  </div>
+  <hr class="line mb-5" style="width: 25%;">
+  </div>
+  </div>
+</section>

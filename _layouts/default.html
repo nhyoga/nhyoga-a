@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <!-- General meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% if page.indexing == false %}
+      <meta name="robots" content="noindex">
+    {% endif %}
+
+    {% include meta-data.html %}
+     <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
+    <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>
+
+    {% if site.css_inline == true %}
+      {% include site-styles.html %}
+    {% else %}
+      <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
+      <link rel="stylesheet" href="{{ "/assets/font-awesome/css/font-awesome.css" | relative_url }}">
+      <link rel="stylesheet" href="{{ "/assets/tether/tether.min.css" | relative_url }}">
+      <link rel="stylesheet" href="{{ "/assets/bootstrap/css/bootstrap.min.css" | relative_url }}">
+      <link rel="stylesheet" href="{{ "/assets/bootstrap/css/bootstrap-grid.min.css" | relative_url }}">
+      <link rel="stylesheet" href="{{ "/assets/bootstrap/css/bootstrap-reboot.min.css" | relative_url }}">
+      <link rel="stylesheet" href="{{ "/assets/gdpr-plugin/gdpr-styles.css" | relative_url }}">
+      <link rel="stylesheet" href="{{ "/assets/dropdown/css/style.css" | relative_url }}">
+      <link rel="stylesheet" href="{{ "/assets/theme/css/style.css" | relative_url }}">
+      <link rel="stylesheet" href="{{ "/assets/mobirise/css/mbr-additional.css" | relative_url }}">     
+      <link rel="stylesheet" href="{{ "/fonts/myfonts.css" | relative_url }}">
+    
+    
+    {% endif %}
+    <link rel="shortcut icon" href="{{site.url}}/assets/images/lotus-flower.svg" type="image/x-icon">
+    {% if site.avatarurl %}{% include site-favicons.html %}{% endif %}
+
+    {% if site.google_analytics %}{% include site-analytics.html %}{% endif %}
+
+    <script src="https://identity-js.netlify.com/v1/netlify-identity-widget.js"></script>
+  </head>
+
+  <body class="layout-{{ page.layout }}{% if page.title %}  {{ page.title | slugify }}{% endif %}"><a name="top" id="top"></a>
+    {% include site-icons.svg %}
+
+
+    {{ content }}
+
+    {% if site.service_worker != false %}{% include site-sw.html %}{% endif %}
+  </body>
+
+</html>

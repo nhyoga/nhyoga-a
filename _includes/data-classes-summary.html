@@ -1,0 +1,51 @@
+<section class="mbr-section article content9 cid-s4UEq6b6wt" id="content9-1y">
+
+
+
+  <div class="container py-5">
+    <div class="inner-container" style="width: 100%;">
+      <hr class="line" style="width: 25%;">
+      <div class="row">
+        <div class="col-12 text-center py-5 typeset">
+          {% for block in site.data.classtimes.heading %}
+          {% if block %}
+          <h3 class="typeset">{{block}}</h3>
+          {% endif %}
+
+          {% endfor %}
+          {% for block in site.data.classtimes.desc %}
+          {% if block %}
+          <p>{{block}}</p>
+          {% endif %}
+
+          {% endfor %}
+          <div class="row">
+            <div class="col-12 col-md-6 offset-md-3 text-center px-0">
+
+              <ul class="list-unstyled text-center mx-auto">
+                {% for block in site.data.classtimes.classtime %}
+                <li class="text-center border-botom pt-4 px-0 mx-0 ">
+
+                  
+                  <div class="d-flex justify-content-center ">
+                    <div class="d-inline mr-5">{{block.day}}:</div>
+                    <div class="d-inline  ">{{block.start}}-{{block.finish}}</div>
+                  </div>
+
+                </li>
+                {% endfor %}
+              </ul>
+              <a class="btn btn-sm btn-primary display-4" href="mailto:{{site.email}}">Contact - Email</a>
+
+              <a class="btn btn-sm btn-primary display-4" href="tel:07834070448">BOOK - 07834070448</a>
+            </div>
+          </div>
+          <div class="col-12 text-center py-3">
+            <a href="/session-times">See all details of Shoreham Yoga sessions and classes here</a>
+          </div>
+        </div>
+      </div>
+      <hr class="line" style="width: 25%;">
+    </div>
+  </div>
+</section>

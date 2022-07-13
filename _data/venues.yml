@@ -1,0 +1,12 @@
+heading: Yoga class locations
+desc: Find details of Shoreham yoga class times and locations below
+locations:
+  - venue: Shoreham Community Centre
+    address: 2 Pond Rd Shoreham-by-Sea
+    postcode: BN43 5WU
+    embedUrl: https://www.google.com/maps/embed/v1/place?key=AIzaSyAEIpgj38KyLFELm2bK9Y7krBkz1K-cMq8&q=place_id:ChIJIzHRWB2adUgRpP-JYZ0hEjg
+    zoom: ""
+  - venue: Zoom
+    address: ""
+    postcode: ""
+    zoom: ""

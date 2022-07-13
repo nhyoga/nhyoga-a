@@ -1,0 +1,22 @@
+
+{% assign page_image = page.page_image %}
+
+
+{% if page_image > "" %}
+<div class="container page-image">
+  <div class="media-container-row mt-3 mb-1 ">
+      <div class="col-12 col-md-12">
+        
+          <div class="media-container-row">
+          
+              <div class="mbr-figure {{ page.page_image_style }}" >
+                <img class="border rounded-circle self " src="{{ page_image }}" alt="{{page.title}}" title="{{page.title}}">  
+              </div>
+              
+          </div>
+          
+      </div>
+  </div>
+</div>
+  
+{% endif %}
