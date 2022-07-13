@@ -21,12 +21,13 @@ plugins:
 - jemoji
 
 # Site settings
-url: 'https://mydomain.com'
+url: 'https://www.nicolaharmanyoga.co.uk'
 baseurl: ''
-title: 'My website'
-description: 'This is my new website'
 permalink: pretty
-logo: "https://www.gravatar.com/avatar/6c0377abcf4da91cdd35dea4554b2a4c?s=52"
+logo: '/assets/images/logo-sitting-96x97.png'
+google_analytics: true
+phone: 07834070448
+email: yoga@nicolaharman.com
 
 # Pagination
 paginate: 5
@@ -34,12 +35,18 @@ paginate_path: blog/page:num
 
 # Header nav
 navigation_header:
-- title: Home
-  url: /
 - title: About
   url: /about/
-- title: Blog
-  url: /blog/
+- title: classes
+  url: /classes/
+- title: 1-2-1
+  url: /one-to-one-sessions/  
+- title: sessions
+  url: /session-times/
+- title: locations
+  url: /locations/ 
+- title: testimonials
+  url: /testimonials/  
 
 # Footer nav
 navigation_footer:
@@ -55,7 +62,13 @@ collections:
     feature_text: |
       Welcome to my blog
     feature_image: "https://picsum.photos/2560/600?image=866"
+  testimonials:
+    title: Testimonials
+    output: true
+    description: "Quotes from classes"
+    feature_text: 
 
+  
 # Collection settings
 defaults:
   -
@@ -67,6 +80,14 @@ defaults:
   -
     scope:
       path: ""
+      type: "testimonials"
+    values:
+      layout: testimonial # Set the default layout for testimonials
+  -
+    scope:
+      path: "assets/images"
       type: "pages"
     values:
       layout: page # Set the default layout for pages
+      subtitle: ""
+      page_image: ""
