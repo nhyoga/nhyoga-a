@@ -1,8 +1,14 @@
 ---
-title: Welcome to my website
-feature_image: "https://picsum.photos/1300/400?image=989"
-feature_text: |
-  ## Hello world
+layout: home
+title: Nicola Harman Yoga
+subtitle: simple, healthy, focused
+feature_image: /assets/images/home-cropped01-2000x1275.jpg
+feature_text: |-
+  Yoga groups in the centre of Shoreham
+
+  [LEARN MORE](https://www.nicolaharmanyoga.co.uk/index.html#features13-5)
+
+  [](https://www.nicolaharmanyoga.co.uk/index.html#next)
 ---
 
-There isn't much going on here yet, but watch this space
+SO There isn't much going on here yet, but watch this space
