@@ -3,10 +3,10 @@ layout: page
 title: "About Nicola "
 page_image: /assets/images/nicola-harman-side-portrait-536x536.jpg
 seotitle: About Nicola | Nicola Harman Yoga classes in Brighton & Shoreham
-seodescription: If you are serious about recovery from injury and developing
+seodescription: "If you are serious about recovery from injury and developing
   strength and health for your lifetime look no further than Nicola Harman. With
-  20 years of experience you too can benefit first hand in healing and
-  wellbeing. Take a class in Shoreham and find out
+  20 years of experience you too can benefit first hand in healing and wellbeing
+  - take a class in Shoreham and find out "
 ---
 In 2001 Nicola was introduced to yoga and from her first class she knew it was what had been missing from her life. 
 
