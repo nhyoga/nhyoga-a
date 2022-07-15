@@ -12,7 +12,7 @@ In 2001 Nicola was introduced to yoga and from her first class she knew it was w
 
 Practicing regularly she soon began to see the benefits not just physically but emotional mentally and spiritually. Yoga had such a profound effect on her in 2004 Nicola gave up her business to go abroad and train as a yoga teacher.
 
-She ran her own busy yoga studio in Hove for 12 years only recently selling up in order to focus on what she is most passionate about: teaching yoga.
+She ran her own busy yoga studio in Hove for 12 years only recently selling up in order to focus on what she is most passionate about teaching yoga.
 
 Nicola has studied with many inspirational teachers around the world. However since discovering Iyengar yoga the practice has given Nicola a deeper sense of connection and insight into her own practice. She draws on this to guide and encourage her students in her classes.
 
