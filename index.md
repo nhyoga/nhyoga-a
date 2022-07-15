@@ -10,5 +10,3 @@ feature_text: |-
 
   [](https://www.nicolaharmanyoga.co.uk/index.html#next)
 ---
-
-SO There isn't much going on here yet, but watch this space
