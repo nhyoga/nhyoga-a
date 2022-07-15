@@ -40,7 +40,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Featured image", name: "feature_image", widget: "image", required: false}
       - {label: "Feature text", name: "feature_text", widget: "markdown", required: false}
       - {label: "Page image", name: "page_image", widget: "image", required: false}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Body", name: "body", widget: "markdown", required: false}
       - {label: "Meta image", name: "image", widget: "image", required: false}
       - {label: "SEO title", name: "seotitle", widget: "string", required: false, preview: false}
       - {label: "SEO description", name: "seodescription", widget: "text", required: false, preview: false}
