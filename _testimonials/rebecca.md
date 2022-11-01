@@ -1,5 +1,5 @@
 ---
-title: Rebecca Tanya-Mead
+title: Rebecca Tanya Mead
 categories:
   - General
 page_image: /assets/images/rebecca-tanya-mead-head-214x216.jpg
