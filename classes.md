@@ -2,7 +2,7 @@
 layout: page
 title: About the yoga classes
 feature_image: ""
-page_image: /assets/images/dsc-5966-320x214.jpeg
+page_image: /assets/images/dog-pose.jpeg
 page_image_style: normal
 seotitle: About Nicola | Nicola Harman Yoga classes in Brighton and Shoreham
 seodescription: If you are serious about recovery from injury and developing
