@@ -3,8 +3,9 @@ layout: page
 title: About the yoga classes
 feature_image: /assets/images/nicolaharmanyoga.co.uk-fb.png
 page_image: ""
-page_image_style: normal
+image: /assets/images/nicolaharmanyoga.co.uk-fb.png
 seotitle: About Nicola | Nicola Harman Yoga classes in Brighton and Shoreham
+page_image_style: normal
 seodescription: If you are serious about recovery from injury and developing
   strength and health for your lifetime look no further than Nicola Harman. With
   20 years of experience you too can benefit first hand in healing and
